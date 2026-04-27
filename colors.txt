@@ -1,0 +1,5 @@
+purple=AE33FF
+white=FFFFFF (background)
+black=1F1F1F (Text)
+LIGHT GRY=C2C2C2
+P=454847

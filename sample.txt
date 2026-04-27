@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="toggleBtn">Toggle Mode</button>
+
+  <h1>Hello World</h1>
+  <p>This is a simple dark/light mode example.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
+🎨 SCSS (style.scss)
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+body.dark {
+  --bg-color: #111;
+  --text-color: #eee;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+⚙️ JavaScript (script.js)
+const btn = document.getElementById("toggleBtn");
+
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
