@@ -301,12 +301,15 @@ section .section1 .left p {
 section .section1 .left .two_elem {
   display: flex;
   gap: 2rem;
+  justify-content: start;
+  align-items: start;
 }
-section .section1 .left .two_elem button {
+section .section1 .left .two_elem .special_button button {
+  cursor: pointer;
   background-color: #AE33FF;
   color: #eee;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.4em 0.5rem;
+  border-radius: 0.3rem;
   border: none;
 }
 section .section1 .left .two_elem a {
@@ -603,6 +606,8 @@ footer .foot .images a img {
   section .section2 .right {
     width: 100%;
   }
+
+  
   section .section3 .bottom {
     width: 100%;
     display: flex;

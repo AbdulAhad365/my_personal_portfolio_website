@@ -375,14 +375,21 @@ section{
             .two_elem{
                 display: flex;
                 gap: 2rem;
-                button{
-                    background-color: $color-purple;
-                    color: $color-white;
-                    padding: 0.5rem 1rem;
-                    border-radius: 0.5rem;
-                    border: none;
-                    // font-size: $font-small;
+                justify-content: start;
+                align-items: start;
+                .special_button{
+                    button{
+                            cursor: pointer;
+                            background-color: $color-purple;
+                            color: $color-white;
+                            padding: 0.4em 0.5rem;
+                            border-radius: 0.3rem;
+                            border: none;
+                            // // font-size: $font-small;
 
+                        }
+    
+                    
                 }
                 a{
                     text-decoration: none;
